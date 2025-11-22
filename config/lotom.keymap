@@ -37,7 +37,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
         };
@@ -52,7 +52,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
         };
@@ -67,7 +67,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
         };
@@ -82,7 +82,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
         };
@@ -97,7 +97,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
         };
@@ -112,7 +112,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
         };
@@ -127,7 +127,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
         };
