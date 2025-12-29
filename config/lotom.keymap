@@ -57,6 +57,8 @@
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
+
+            label = "pointing...";
         };
 
         SCROLL {
@@ -72,6 +74,8 @@
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
+
+            label = "Scrolling...";
         };
 
         ARROW {
@@ -87,6 +91,8 @@
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
+
+            label = "Arrow";
         };
 
         NUM {
@@ -102,6 +108,8 @@
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
+
+            label = "123";
         };
 
         FUNCTION {
@@ -132,6 +140,8 @@
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
             >;
+
+            label = "Bluetooth";
         };
 
         Mac {
