@@ -87,10 +87,7 @@
 &trans     &trans                  &trans         &trans                   &trans             &trans  &trans  &trans  &trans              &trans
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings = <&tab_slide>, <&scroll_up_down>;
 
             label = "Arrow";
         };
