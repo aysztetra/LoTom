@@ -91,8 +91,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
-                <&scroll_up_down>;
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>,
+                <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
         };
 
         MOUSE {
@@ -147,10 +147,10 @@
         NUM {
             bindings = <
 &trans                   &trans
-&kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp LG(LS(NUMBER_4))  &kp PLUS      &kp MINUS  &kp PIPE  &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
-&kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp ASTERISK  &trans     &trans    &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
-&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &trans     &trans    &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans                   &trans        &trans        &trans                &trans        &trans     &trans    &kp LEFT_SHIFT   &trans        &trans
+&kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp LG(LS(NUMBER_4))  &kp PLUS      &kp MINUS   &kp PIPE  &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
+&kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp ASTERISK  &kp LS(N5)  &trans    &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
+&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &kp LS(N7)  &trans    &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&trans                   &trans        &trans        &trans                &trans        &trans      &trans    &kp LEFT_SHIFT   &trans        &trans
             >;
 
             sensor-bindings = <
