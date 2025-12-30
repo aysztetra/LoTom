@@ -56,7 +56,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>,
+                <&inc_dec_kp LG(RIGHT_ARROW) LG(LEFT_ARROW)>,
                 <&scroll_up_down>;
 
             label = "iOS";
