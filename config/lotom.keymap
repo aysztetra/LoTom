@@ -237,10 +237,10 @@
         BT {
             bindings = <
 &trans         &trans
-&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans  &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans
-&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
-&trans         &trans     &trans     &trans     &trans  &trans  &trans  &trans      &trans        &trans
+&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans  &trans  &trans  &trans  &tog 0  &tog 1  &tog 2  &trans
+&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans  &trans  &trans  &BT3    &BT4    &trans  &trans
+&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans  &BT0    &BT1    &BT2    &trans
+&trans         &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <
