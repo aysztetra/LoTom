@@ -16,7 +16,7 @@
             tap-ms = <20>;
         };
 
-                tog_on: toggle_layer_on_only {
+        tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer On";
@@ -37,6 +37,73 @@
             bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
 
             tap-ms = <20>;
+        };
+    };
+
+    macros {
+        BT0: BT0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>,
+                <&tog_on 0>;
+
+            label = "BT0";
+        };
+
+        BT1: BT1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>,
+                <&tog_on 1>;
+
+            label = "BT1";
+        };
+
+        BT2: BT2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>,
+                <&tog_on 2>;
+
+            label = "BT2";
+        };
+
+        BT3: BT3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>,
+                <&tog_on 0>;
+
+            label = "BT3";
+        };
+
+        BT4: BT4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>,
+                <&tog_on 2>;
+
+            label = "BT4";
         };
     };
 
@@ -92,9 +159,9 @@
             bindings = <
 &trans     &trans
 &trans     &trans        &trans            &trans          &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans     &trans        &trans            &trans          &trans    &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans     &trans        &trans            &trans          &trans    &trans    &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
 &trans     &trans        &trans            &trans          &trans    &trans    &trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &mkp MB1  &mkp MB3  &trans  &mo 3   &trans    &trans
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &mkp MB1  &mkp MB3  &trans  &mo 5   &trans    &trans
             >;
 
             sensor-bindings = <
@@ -183,7 +250,5 @@
 
             label = "Bluetooth";
         };
-
-       
     };
 };
