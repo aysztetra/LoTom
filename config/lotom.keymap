@@ -66,10 +66,10 @@
         Windows {
             bindings = <
 &kp ESCAPE  &kp BACKSPACE
-&kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9                    &kp BACKSLASH      &kp Y         &kp U         &kp I              &kp O    &kp P
-&kp A       &kp S          &kp D             &kp F           &kp G        &mo 9                    &kp BACKSLASH      &kp H         &kp J         &kp K              &kp L    &kp MINUS
-&kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA          &kp DOT  &lt 5 SLASH
-&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp LANG_ZENKAKUHANKAKU  &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp RIGHT_BRACKET
+&kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I              &kp O    &kp P
+&kp A       &kp S          &kp D             &kp F           &kp G        &mo 9             &kp BACKSLASH      &kp H         &kp J         &kp K              &kp L    &kp MINUS
+&kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA          &kp DOT  &lt 5 SLASH
+&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GRAVE         &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <
@@ -83,11 +83,11 @@
         lefthand {
             label = "Left-device";
             bindings = <
-&kp ESCAPE  &none
-&kp Q       &kp W         &kp E             &kp R           &kp T        &mo 9                        &none  &none  &none   &none  &none  &none
-&kp A       &kp S         &kp D             &kp F           &kp G        &mo 9                        &none  &none  &tog 3  &none  &none  &none
-&kp Z       &kp X         &kp C             &kp V           &kp B        &kp LEFT_BRACKET             &none  &none  &none   &none  &none  &none
-&kp LCTRL   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp LG(LANG_ZENKAKUHANKAKU)  &none  &none  &none   &none
+&kp ESCAPE          &none
+&kp Q               &kp LS(UP_ARROW)  &kp E          &kp R           &kp LC(T)  &none  &none  &none  &none   &none  &none  &none
+&kp LS(LEFT_ARROW)  &kp LS(DOWN)      &kp LS(RIGHT)  &none           &none      &none  &none  &none  &tog 3  &none  &none  &none
+&kp K_UNDO          &kp K_CUT         &kp K_COPY     &kp K_PASTE     &none      &kp B  &none  &none  &none   &none  &none  &none
+&kp LCTRL           &kp LEFT_ALT      &kp TAB        &kp LEFT_SHIFT  &kp SPACE  &kp P  &none  &none  &none   &none
             >;
 
             sensor-bindings =
