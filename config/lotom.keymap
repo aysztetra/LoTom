@@ -55,10 +55,9 @@
 &kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GLOBE         &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp RIGHT_BRACKET
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>,
+                <&scroll_up_down>;
 
             label = "iOS";
         };
