@@ -178,7 +178,7 @@
 
         BT {
             bindings = <
-&trans         &trans
+&bt BT_CLR     &trans
 &kp LG(Q)      &kp LC(W)  &trans     &trans     &tog 3  &trans  &trans  &bt BT_PRV  &to 0         &to 1         &to 2         &trans
 &kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans  &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans
 &kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
