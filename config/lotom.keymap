@@ -33,7 +33,7 @@
             bindings = <
 &kp ESCAPE  &kp BACKSPACE
 &kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I              &kp O    &lt 5 P
-&kp A       &kp S          &kp D             &kp F           &kp G        &mo 9             &kp BACKSLASH      &kp H         &kp J         &kp K              &kp L    &lt 5 MINUS
+&kp A       &kp S          &kp D             &kp F           &kp G        &mo 8             &kp BACKSLASH      &kp H         &kp J         &kp K              &kp L    &lt 5 MINUS
 &kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA          &kp DOT  &lt 5 SLASH
 &kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GLOBE         &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp RIGHT_BRACKET
             >;
@@ -50,7 +50,7 @@
             bindings = <
 &kp ESCAPE  &kp BACKSPACE
 &kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I              &kp O    &lt 5 P
-&kp A       &kp S          &kp D             &kp F           &kp G        &mo 9             &kp BACKSLASH      &kp H         &kp J         &kp K              &kp L    &lt 5 MINUS
+&kp A       &kp S          &kp D             &kp F           &kp G        &mo 8             &kp BACKSLASH      &kp H         &kp J         &kp K              &kp L    &lt 5 MINUS
 &kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA          &kp DOT  &lt 5 SLASH
 &kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GLOBE         &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp RIGHT_BRACKET
             >;
@@ -65,10 +65,10 @@
         Windows {
             bindings = <
 &kp ESCAPE  &kp BACKSPACE
-&kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I       &kp O    &lt 5 P
-&kp A       &kp S          &kp D             &kp F           &kp G        &mo 9             &kp EXCL           &kp H         &kp J         &kp K       &kp L    &lt 5 MINUS
-&kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA   &kp DOT  &lt 5 SLASH
-&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GRAVE         &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp LS(N7)
+&kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I      &kp O    &lt 5 P
+&kp A       &kp S          &kp D             &kp F           &kp G        &mo 8             &kp EXCL           &kp H         &kp J         &kp K      &kp L    &lt 5 MINUS
+&kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA  &kp DOT  &lt 5 SLASH
+&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GRAVE         &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp UNDER
             >;
 
             sensor-bindings = <
@@ -97,10 +97,10 @@
         MOUSE {
             bindings = <
 &trans     &trans
-&trans     &trans        &trans            &trans          &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
-&trans     &trans        &trans            &trans          &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans     &trans        &trans            &trans          &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans  &trans  &mo 6   &trans    &trans
+&trans     &trans        &trans            &trans          &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans
+&trans     &trans        &trans            &trans          &trans  &trans  &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans     &trans        &trans            &trans          &trans  &trans  &trans  &mkp MB5  &trans    &trans    &trans    &trans
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans  &trans  &mo 6     &trans    &trans
             >;
 
             sensor-bindings = <
