@@ -26,6 +26,48 @@
         };
     };
 
+    macros {
+        BTLayer1: BTLayer1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
+
+            label = "BTLAYER1";
+        };
+
+        BTLayer2: BTLayer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 1>;
+
+            label = "BTLAYER2";
+        };
+
+        BTLayer3: BTLayer3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 0>;
+
+            label = "BTLAYER3";
+        };
+
+        BTLayer4: BTLayer4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "BTLAYER4";
+        };
+
+        BTLayer5: BTLayer5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "BTLAYER5";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,7 +92,7 @@
             bindings = <
 &kp ESCAPE  &kp BACKSPACE
 &kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I           &kp O    &lt 5 P
-&kp A       &kp S          &kp D             &kp F           &kp G        &mo 8             &kp BACKSLASH      &kp H         &kp J         &kp K           &kp L    &lt 5 MINUS
+&kp A       &kp S          &kp D             &kp F           &kp G        &mo 8             &kp EXCLAMATION    &kp H         &kp J         &kp K           &kp L    &lt 5 MINUS
 &kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA       &kp DOT  &lt 5 SLASH
 &kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GLOBE         &kp ENTER          &lt 6 DELETE  &lt 5 ESCAPE  &kp UNDERSCORE
             >;
@@ -97,7 +139,7 @@
         MOUSE {
             bindings = <
 &trans     &trans
-&trans     &trans        &trans            &trans          &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans
+&trans     &trans        &trans            &trans          &trans  &trans  &trans  &trans    &trans    &mkp MB3  &mkp MB2  &trans
 &trans     &trans        &trans            &trans          &trans  &trans  &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans     &trans        &trans            &trans          &trans  &trans  &trans  &mkp MB5  &trans    &trans    &trans    &trans
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans  &trans  &mo 6     &trans    &trans
@@ -182,10 +224,10 @@
         BT {
             bindings = <
 &bt BT_CLR     &bt BT_CLR_ALL
-&kp LG(Q)      &kp LC(W)       &trans     &trans     &tog 3  &trans  &trans  &bt BT_PRV  &to 1         &to 2         &to 0         &trans
-&kp LG(LS(Z))  &trans          &kp LC(C)  &trans     &trans  &trans  &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans
-&kp LG(Z)      &kp LG(X)       &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
-&trans         &trans          &trans     &trans     &trans  &trans  &trans  &trans      &trans        &trans
+&kp LG(Q)      &kp LC(W)       &trans     &trans     &tog 3  &trans  &bt BT_PRV  &bt BT_NXT  &to 1      &to 2      &to 0      &trans
+&kp LG(LS(Z))  &trans          &kp LC(C)  &trans     &trans  &trans  &trans      &trans      &BTLayer4  &BTLayer5  &trans     &trans
+&kp LG(Z)      &kp LG(X)       &kp LG(C)  &kp LG(V)  &trans  &trans  &trans      &trans      &BTLayer1  &BTLayer2  &BTLayer3  &trans
+&trans         &trans          &trans     &trans     &trans  &trans  &trans      &trans      &trans     &trans
             >;
 
             sensor-bindings = <
