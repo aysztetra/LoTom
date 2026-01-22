@@ -1,0 +1,20 @@
+{
+  "bundles": {
+    "lotomcomf-710": {
+      "name": "lotomcomf",
+      "created": "2026-01-22T11:59:20.955Z",
+      "lastUsed": "2026-01-22T11:59:20.955Z",
+      "tags": [],
+      "files": [
+        "config/boards/shields/lotom/Kconfig.defconfig",
+        "config/boards/shields/lotom/Kconfig.shield",
+        "config/boards/shields/lotom/lotom_L.conf",
+        "config/boards/shields/lotom/lotom_L.overlay",
+        "config/boards/shields/lotom/lotom_R.conf",
+        "config/boards/shields/lotom/lotom_R.overlay",
+        "config/boards/shields/lotom/lotom.dtsi",
+        "config/boards/shields/lotom/lotom.zmk.yml"
+      ]
+    }
+  }
+}
