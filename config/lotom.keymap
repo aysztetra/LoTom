@@ -91,10 +91,10 @@
         mac {
             bindings = <
 &kp ESCAPE  &kp BACKSPACE
-&kp Q       &kp W          &kp E             &kp R           &kp T        &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I           &kp O    &kp P
-&kp A       &kp S          &kp D             &kp F           &kp G        &lt 8 TAB         &kp EXCLAMATION    &kp H         &kp J         &kp K           &kp L    &lt 5 MINUS
-&kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA       &kp DOT  &lt 5 SLASH
-&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 7 SPACE  &kp GLOBE         &lt 6 ENTER        &lt 6 DELETE  &lt 5 ESCAPE  &kp UNDERSCORE
+&kp Q       &kp W          &kp E             &kp R           &kp T      &mo 9             &kp BACKSLASH      &kp Y         &kp U         &kp I           &kp O    &kp P
+&kp A       &kp S          &kp D             &kp F           &kp G      &lt 8 TAB         &kp EXCLAMATION    &kp H         &kp J         &kp K           &kp L    &lt 5 MINUS
+&kp Z       &kp X          &kp C             &kp V           &kp B      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N         &kp M         &kp COMMA       &kp DOT  &lt 5 SLASH
+&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp SPACE  &lt 7 GLOBE       &lt 6 ENTER        &lt 6 DELETE  &lt 5 ESCAPE  &kp UNDERSCORE
             >;
 
             sensor-bindings = <
@@ -173,10 +173,10 @@
         ARROW-NUM {
             bindings = <
 &none   &trans
-&none   &none   &none   &none           &none   &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)
-&none   &none   &none   &none           &none   &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RC(LEFT_ARROW)  &kp UP_ARROW      &kp RC(RIGHT_ARROW)
-&none   &none   &none   &none           &none   &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW
-&trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans  &kp NUMBER_0  &kp NUMBER_0  &kp PAGE_UP   &kp PAGE_DOWN
+&none   &none   &none   &none           &none   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)
+&none   &none   &none   &none           &none   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RC(LEFT_ARROW)  &kp UP_ARROW      &kp RC(RIGHT_ARROW)
+&none   &none   &none   &none           &none   &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW
+&trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PAGE_UP      &kp PAGE_DOWN
             >;
 
             sensor-bindings = <
