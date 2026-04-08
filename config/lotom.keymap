@@ -30,7 +30,7 @@
         BTLayer1: BTLayer1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 2>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
 
             label = "BTLAYER1";
         };
@@ -38,7 +38,7 @@
         BTLayer2: BTLayer2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 1>;
 
             label = "BTLAYER2";
         };
@@ -46,7 +46,7 @@
         BTLayer3: BTLayer3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 2>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 1>;
 
             label = "BTLAYER3";
         };
@@ -54,7 +54,7 @@
         BTLayer4: BTLayer4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 3>;
+            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 1>;
 
             label = "BTLAYER4";
         };
@@ -62,7 +62,7 @@
         BTLayer5: BTLayer5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 3>;
+            bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&to 1>;
 
             label = "BTLAYER5";
         };
@@ -238,8 +238,8 @@
         BT {
             bindings = <
 &bt BT_CLR     &bt BT_CLR_ALL
-&kp LG(Q)      &kp LC(W)       &trans     &trans     &tog 3  &trans  &bt BT_PRV  &bt BT_NXT  &to 0      &to 3      &to 2      &trans
-&kp LG(LS(Z))  &trans          &kp LC(C)  &trans     &trans  &trans  &trans      &trans      &BTLayer4  &BTLayer5  &trans     &trans
+&kp LG(Q)      &kp LC(W)       &trans     &trans     &tog 3  &trans  &bt BT_PRV  &bt BT_NXT  &to 0      &to 1      &to 2      &trans
+&kp LG(LS(Z))  &trans          &kp LC(C)  &to 3      &trans  &trans  &trans      &trans      &BTLayer4  &BTLayer5  &trans     &trans
 &kp LG(Z)      &kp LG(X)       &kp LG(C)  &kp LG(V)  &trans  &trans  &trans      &trans      &BTLayer1  &BTLayer2  &BTLayer3  &trans
 &trans         &trans          &trans     &trans     &trans  &trans  &trans      &trans      &trans     &trans
             >;
